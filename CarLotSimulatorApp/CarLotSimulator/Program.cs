@@ -25,16 +25,23 @@ namespace CarLotSimulator
                 car1.EngineNoise = "chaca chaca";
                 car1.HonkNoise = "yahoo!!";
                 car1.IsDriveable = true;
+
             };
             carLotInstance.ListOfCars.Add(car1);
-
+            Carlot.numberOfCars++;
+            Console.WriteLine($"There are {Carlot.numberOfCars} cars in my lot");
+            Console.WriteLine();    
             Car car2 = new Car() { Make = "Toyota", Model = "Corola", Year = 2015, EngineNoise = "Brooom", HonkNoise = "Fiu fiu", IsDriveable = true };
 
             carLotInstance.ListOfCars.Add(car2);
-
-
+            Carlot.numberOfCars++;
+            Console.WriteLine($"There are{Carlot.numberOfCars} cars in my lot");
+            Console.WriteLine() ;
             Car car3 = new Car("Toyota", "Tacoma", 2019, "zoorr", "wiiiiuuu", false );
             carLotInstance.ListOfCars.Add(car3);
+            Carlot.numberOfCars++;
+            Console.WriteLine($"There are {Carlot.numberOfCars} cars in my lot");
+            Console.WriteLine();
             
             
             car1.MakeEngineNoise();
